@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deadshot - Intense Online Battle Royale Shooter Game</title>
-    <meta name="description" content="Play Deadshot, the ultimate battle royale shooter where precision and strategy lead to victory in Deadshot's intense combat arena. Be the last one standing!">
-    <meta name="keywords" content="Deadshot, battle royale, shooter game, online game, multiplayer, Deadshot game">
-    <link rel="canonical" href="https://deadshot.top">
+    <title>ڈیڈشاٹ - انٹینس آن لائن بیٹل رویال شوٹر گیم</title>
+    <meta name="description" content="ڈیڈشاٹ کھیلیں، نہایت بیٹل رویال شوٹر جہاں درستگی اور حکمت عملی ڈیڈشاٹ کے انٹینس جنگی میدان میں فتح کی راہ دکھاتی ہے۔ آخری کھڑا رہنے والا بنیں!">
+    <meta name="keywords" content="ڈیڈشاٹ، بیٹل رویال، شوٹر گیم، آن لائن گیم، ملٹی پلیئر، ڈیڈشاٹ گیم">
+    <link rel="canonical" href="https://deadshot.top/ur">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,10 +187,11 @@
             content: '';
             position: absolute;
             height: 1px;
-            background: linear-gradient(90deg, var(--accent), transparent);
+            background: linear-gradient(-90deg, var(--accent), transparent);
             width: 150px;
             bottom: -10px;
-            left: 0;
+            right: 0;
+            left: auto;
         }
         
         .hero-subtitle {
@@ -292,7 +293,8 @@
         
         .tips-list li {
             position: relative;
-            padding-left: var(--space-md);
+            padding-right: var(--space-md);
+            padding-left: 0;
             margin-bottom: var(--space-lg);
         }
         
@@ -312,12 +314,14 @@
         }
         
         .tips-list-desc {
-            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-left: 0;
         }
         
         .highlight-list {
             list-style-type: disc;
-            padding-left: var(--space-lg);
+            padding-right: var(--space-lg);
+            padding-left: 0;
         }
         
         .highlight-list li {
@@ -471,25 +475,25 @@
                 </div>
             </div>
             <nav class="hidden md:flex">
-                <a href="#game" class="nav-link text-gray-300 hover:text-white">Play Deadshot</a>
-                <a href="#about" class="nav-link text-gray-300 hover:text-white">About</a>
-                <a href="#features" class="nav-link text-gray-300 hover:text-white">Features</a>
-                <a href="#tips" class="nav-link text-gray-300 hover:text-white">Tips</a>
+                <a href="#game" class="nav-link text-gray-300 hover:text-white">ڈیڈشاٹ کھیلیں</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-white">متعلق</a>
+                <a href="#features" class="nav-link text-gray-300 hover:text-white">خصوصیات</a>
+                <a href="#tips" class="nav-link text-gray-300 hover:text-white">ٹپس</a>
             </nav>
-            <div class="hidden md:flex items-center space-x-3 ml-6">
+            <div class="hidden md:flex items-center space-x-3 mr-6">
                 <div class="relative group language-selector">
                     <button class="text-gray-300 hover:text-white flex items-center focus:outline-none lang-toggle">
-                        <span>EN</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <span>UR</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <div class="absolute right-0 mt-2 w-32 bg-gray-800 rounded-md shadow-lg overflow-hidden z-20 hidden lang-menu">
-                        <a href="index.html" class="block px-4 py-2 text-sm text-white bg-gray-700">English</a>
-                        <a href="cs/index.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Čeština</a>
-                        <a href="af/index.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Afrikaans</a>
-                        <a href="ur/index.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">اردو</a>
-                        <a href="ko/index.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">한국어</a>
+                    <div class="absolute left-0 mt-2 w-32 bg-gray-800 rounded-md shadow-lg overflow-hidden z-20 hidden lang-menu">
+                        <a href="../index.html" class="block px-4 py-2 text-sm text-right text-gray-300 hover:bg-gray-700 hover:text-white">English</a>
+                        <a href="../cs/index.html" class="block px-4 py-2 text-sm text-right text-gray-300 hover:bg-gray-700 hover:text-white">Čeština</a>
+                        <a href="../af/index.html" class="block px-4 py-2 text-sm text-right text-gray-300 hover:bg-gray-700 hover:text-white">Afrikaans</a>
+                        <a href="index.html" class="block px-4 py-2 text-sm text-right text-white bg-gray-700">اردو</a>
+                        <a href="../ko/index.html" class="block px-4 py-2 text-sm text-right text-gray-300 hover:bg-gray-700 hover:text-white">한국어</a>
                     </div>
                 </div>
             </div>
@@ -500,17 +504,17 @@
                     </svg>
                 </button>
                 <div class="absolute top-16 left-0 right-0 bg-gray-800 p-4 rounded-b-lg hidden mobile-menu z-30">
-                    <a href="#game" class="block py-2 text-center text-gray-300 hover:text-white">Play Deadshot</a>
-                    <a href="#about" class="block py-2 text-center text-gray-300 hover:text-white">About</a>
-                    <a href="#features" class="block py-2 text-center text-gray-300 hover:text-white">Features</a>
-                    <a href="#tips" class="block py-2 text-center text-gray-300 hover:text-white">Tips</a>
+                    <a href="#game" class="block py-2 text-center text-gray-300 hover:text-white">ڈیڈشاٹ کھیلیں</a>
+                    <a href="#about" class="block py-2 text-center text-gray-300 hover:text-white">متعلق</a>
+                    <a href="#features" class="block py-2 text-center text-gray-300 hover:text-white">خصوصیات</a>
+                    <a href="#tips" class="block py-2 text-center text-gray-300 hover:text-white">ٹپس</a>
                     <div class="border-t border-gray-700 my-2"></div>
                     <div class="flex justify-center space-x-4 mt-3">
-                        <a href="index.html" class="text-white bg-purple-800 px-2 py-1 rounded">EN</a>
-                        <a href="cs/index.html" class="text-gray-300 hover:text-white">CS</a>
-                        <a href="af/index.html" class="text-gray-300 hover:text-white">AF</a>
-                        <a href="ur/index.html" class="text-gray-300 hover:text-white">UR</a>
-                        <a href="ko/index.html" class="text-gray-300 hover:text-white">KO</a>
+                        <a href="../index.html" class="text-gray-300 hover:text-white">EN</a>
+                        <a href="../cs/index.html" class="text-gray-300 hover:text-white">CS</a>
+                        <a href="../af/index.html" class="text-gray-300 hover:text-white">AF</a>
+                        <a href="index.html" class="text-white bg-purple-800 px-2 py-1 rounded">UR</a>
+                        <a href="../ko/index.html" class="text-gray-300 hover:text-white">KO</a>
                     </div>
                 </div>
             </div>
@@ -520,19 +524,19 @@
     <main>
         <section class="hero-section fade-in">
             <h1 class="hero-title animate__animated animate__fadeIn">
-                <span class="accent-text">DEADSHOT</span> - Dominate The Battlefield
+                <span class="accent-text">ڈیڈشاٹ</span> - میدان جنگ پر حکومت کریں
             </h1>
             <p class="hero-subtitle text-gray-300 animate__animated animate__fadeIn animate__delay-1s">
-                Experience Deadshot, an intense battle royale shooter where precision and strategy determine the last one standing.
+                ڈیڈشاٹ کا تجربہ کریں، ایک انتہائی بیٹل رویال شوٹر جہاں درستگی اور حکمت عملی آخری کھڑے شخص کا تعین کرتی ہے۔
             </p>
             <a href="#game" class="btn-primary animate__animated animate__fadeIn animate__delay-2s pulse-slow">
-                PLAY DEADSHOT NOW
+                ابھی ڈیڈشاٹ کھیلیں
             </a>
         </section>
 
         <section id="game" class="slide-up">
-            <h2 class="section-title border-l-4 border-purple-600">
-                Enter The Deadshot Battlefield
+            <h2 class="section-title border-r-4 border-l-0 border-purple-600">
+                ڈیڈشاٹ کے میدان جنگ میں داخل ہوں
             </h2>
             <div class="game-container">
                 <iframe 
@@ -546,35 +550,35 @@
         </section>
 
         <section id="about" class="slide-up">
-            <h2 class="section-title border-l-4 border-purple-600">
-                About Deadshot
+            <h2 class="section-title border-r-4 border-l-0 border-purple-600">
+                ڈیڈشاٹ کے بارے میں
             </h2>
             <div class="about-grid">
                 <div>
                     <p class="text-gray-300 mb-6 leading-relaxed">
-                        Deadshot is an action-packed online battle royale shooter that challenges your combat skills, strategic thinking, and quick reflexes. As a skilled marksman dropped into Deadshot's shrinking battlefield, your mission is simple yet demanding: eliminate all opponents and be the last player standing.
+                        ڈیڈشاٹ ایک ایکشن سے بھرپور آن لائن بیٹل رویال شوٹر ہے جو آپ کی لڑائی کی مہارتوں، حکمت عملی اور تیز ردعمل کو چیلنج کرتا ہے۔ ڈیڈشاٹ کے سکڑتے ہوئے میدان جنگ میں ایک ماہر نشانہ باز کے طور پر، آپ کا مشن سادہ لیکن طلب گار ہے: تمام مخالفین کو ختم کریں اور آخری کھڑے ہونے والے کھلاڑی بنیں۔
                     </p>
                     <p class="text-gray-300 leading-relaxed">
-                        With a variety of weapons to discover in Deadshot's dynamic environments, and enemies to outmaneuver, every match offers a unique experience that will test your abilities to the limit. Whether you prefer stealth tactics or aggressive confrontation, Deadshot provides the perfect arena to showcase your talents.
+                        ڈیڈشاٹ کے متحرک ماحول میں دریافت کرنے کے لیے مختلف ہتھیاروں کے ساتھ، اور دشمنوں کو چکما دینے کے لیے، ہر میچ ایک منفرد تجربہ پیش کرتا ہے جو آپ کی صلاحیتوں کو انتہائی حد تک آزمائے گا۔ چاہے آپ خفیہ حکمت عملی یا جارحانہ مقابلے کو ترجیح دیتے ہیں، ڈیڈشاٹ آپ کے ہنر کو دکھانے کے لیے مثالی میدان فراہم کرتا ہے۔
                     </p>
                 </div>
                 <div class="feature-card">
-                    <h3 class="text-2xl font-semibold mb-5 accent-text">Deadshot Highlights</h3>
+                    <h3 class="text-2xl font-semibold mb-5 accent-text">ڈیڈشاٹ کی اہم خصوصیات</h3>
                     <ul class="highlight-list text-gray-300">
-                        <li class="stagger-fade">Fast-paced Deadshot battle royale action</li>
-                        <li class="stagger-fade">Multiple weapon types and power-ups</li>
-                        <li class="stagger-fade">Shrinking play zone increases tension</li>
-                        <li class="stagger-fade">Realistic shooting mechanics</li>
-                        <li class="stagger-fade">Interactive environments</li>
-                        <li class="stagger-fade">Quick matches for continuous action</li>
+                        <li class="stagger-fade">تیز رفتار ڈیڈشاٹ بیٹل رویال ایکشن</li>
+                        <li class="stagger-fade">متعدد ہتھیار کی اقسام اور پاور اپس</li>
+                        <li class="stagger-fade">سکڑتا ہوا کھیل کا علاقہ کشیدگی بڑھاتا ہے</li>
+                        <li class="stagger-fade">حقیقت پسندانہ شوٹنگ میکانکس</li>
+                        <li class="stagger-fade">انٹرایکٹو ماحول</li>
+                        <li class="stagger-fade">مسلسل ایکشن کے لیے فوری میچز</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="features" class="slide-up">
-            <h2 class="section-title border-l-4 border-purple-600">
-                Deadshot Game Features
+            <h2 class="section-title border-r-4 border-l-0 border-purple-600">
+                ڈیڈشاٹ گیم کی خصوصیات
             </h2>
             <div class="features-grid">
                 <div class="feature-card stagger-fade">
@@ -584,8 +588,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Real-Time Combat</h3>
-                    <p class="text-gray-300 leading-relaxed">Experience seamless real-time shooting action in Deadshot with responsive controls and dynamic gameplay that keeps you engaged from start to finish.</p>
+                    <h3 class="text-xl font-semibold mb-3">ریئل ٹائم کمبیٹ</h3>
+                    <p class="text-gray-300 leading-relaxed">جوابدہ کنٹرولز اور متحرک گیم پلے کے ساتھ ڈیڈشاٹ میں بے دھڑک ریئل ٹائم شوٹنگ ایکشن کا تجربہ کریں جو آپ کو شروع سے آخر تک مصروف رکھتا ہے۔</p>
                 </div>
                 
                 <div class="feature-card stagger-fade">
@@ -594,8 +598,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Strategic Gameplay</h3>
-                    <p class="text-gray-300 leading-relaxed">Master both shooting skills and tactical decision-making as you navigate the shrinking battlefield and outthink your opponents in Deadshot's competitive arena.</p>
+                    <h3 class="text-xl font-semibold mb-3">حکمت عملی پر مبنی گیم پلے</h3>
+                    <p class="text-gray-300 leading-relaxed">شوٹنگ کی مہارتوں اور تکنیکی فیصلہ سازی دونوں میں مہارت حاصل کریں جیسے آپ سکڑتے ہوئے میدان جنگ میں نیویگیٹ کرتے ہیں اور ڈیڈشاٹ کے مقابلاتی میدان میں اپنے مخالفین کو ذہنی طور پر شکست دیتے ہیں۔</p>
                 </div>
                 
                 <div class="feature-card stagger-fade">
@@ -604,37 +608,37 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3">Multiplayer Arena</h3>
-                    <p class="text-gray-300 leading-relaxed">Compete against players worldwide in Deadshot's intense battle royale matches where only one can emerge victorious.</p>
+                    <h3 class="text-xl font-semibold mb-3">ملٹی پلیئر ارینا</h3>
+                    <p class="text-gray-300 leading-relaxed">دنیا بھر کے کھلاڑیوں کے خلاف ڈیڈشاٹ کے انتہائی بیٹل رویال میچز میں مقابلہ کریں جہاں صرف ایک ہی فاتح بن سکتا ہے۔</p>
                 </div>
             </div>
         </section>
 
         <section id="tips" class="slide-up">
-            <h2 class="section-title border-l-4 border-purple-600">
-                Tips For Deadshot Victory
+            <h2 class="section-title border-r-4 border-l-0 border-purple-600">
+                ڈیڈشاٹ کی فتح کے لیے ٹپس
             </h2>
             <div class="feature-card">
                 <ol class="tips-list">
                     <li class="stagger-fade">
-                        <span class="tips-list-title font-semibold accent-text">Master Your Aim</span> 
-                        <p class="tips-list-desc leading-relaxed text-gray-300">Precision is key in Deadshot. Practice your aim and learn to lead moving targets for successful elimination.</p>
+                        <span class="tips-list-title font-semibold accent-text">اپنی نشانہ بازی میں مہارت حاصل کریں</span> 
+                        <p class="tips-list-desc leading-relaxed text-gray-300">ڈیڈشاٹ میں درستگی کلیدی ہے۔ اپنی نشانہ بازی کی مشق کریں اور کامیاب خاتمے کے لیے متحرک اہداف کو لیڈ کرنا سیکھیں۔</p>
                     </li>
                     <li class="stagger-fade">
-                        <span class="tips-list-title font-semibold accent-text">Stay On The Move</span> 
-                        <p class="tips-list-desc leading-relaxed text-gray-300">A stationary target is an easy target. Keep moving to avoid enemy fire and use the terrain for cover in Deadshot's dynamic battleground.</p>
+                        <span class="tips-list-title font-semibold accent-text">حرکت میں رہیں</span> 
+                        <p class="tips-list-desc leading-relaxed text-gray-300">ایک ساکن ہدف ایک آسان ہدف ہے۔ دشمن کی فائرنگ سے بچنے کے لیے حرکت میں رہیں اور ڈیڈشاٹ کے متحرک جنگی میدان میں اراضی کا استعمال کور کے لیے کریں۔</p>
                     </li>
                     <li class="stagger-fade">
-                        <span class="tips-list-title font-semibold accent-text">Prioritize Weapon Upgrades</span> 
-                        <p class="tips-list-desc leading-relaxed text-gray-300">Better weapons can give you a significant advantage in Deadshot. Don't hesitate to swap your current weapon for a superior one.</p>
+                        <span class="tips-list-title font-semibold accent-text">ہتھیاروں کے اپگریڈ کو ترجیح دیں</span> 
+                        <p class="tips-list-desc leading-relaxed text-gray-300">بہتر ہتھیار آپ کو ڈیڈشاٹ میں نمایاں فائدہ دے سکتے ہیں۔ اپنے موجودہ ہتھیار کو ایک بہتر ہتھیار سے تبدیل کرنے میں ہچکچاہٹ نہ کریں۔</p>
                     </li>
                     <li class="stagger-fade">
-                        <span class="tips-list-title font-semibold accent-text">Manage The Safe Zone</span> 
-                        <p class="tips-list-desc leading-relaxed text-gray-300">Always keep an eye on Deadshot's shrinking play area and position yourself advantageously as it contracts.</p>
+                        <span class="tips-list-title font-semibold accent-text">محفوظ زون کا انتظام کریں</span> 
+                        <p class="tips-list-desc leading-relaxed text-gray-300">ڈیڈشاٹ کے سکڑتے ہوئے کھیل کے علاقے پر ہمیشہ نظر رکھیں اور جیسے ہی یہ سکڑتا ہے، اپنے آپ کو فائدہ مند پوزیشن میں رکھیں۔</p>
                     </li>
                     <li class="stagger-fade">
-                        <span class="tips-list-title font-semibold accent-text">Listen For Audio Cues</span> 
-                        <p class="tips-list-desc leading-relaxed text-gray-300">Sound can reveal enemy positions. Use headphones for the best audio experience and tactical advantage in Deadshot.</p>
+                        <span class="tips-list-title font-semibold accent-text">آڈیو اشاروں کو سنیں</span> 
+                        <p class="tips-list-desc leading-relaxed text-gray-300">آواز دشمن کی پوزیشن کو ظاہر کر سکتی ہے۔ ڈیڈشاٹ میں بہترین آڈیو تجربے اور حکمت عملی کے فائدے کے لیے ہیڈ فون استعمال کریں۔</p>
                     </li>
                 </ol>
             </div>
@@ -649,20 +653,20 @@
                         <span class="accent-text">DEAD</span>SHOT
                     </div>
                     <p class="text-gray-400 text-sm">
-                        The ultimate Deadshot battle royale experience
+                        نہایت ڈیڈشاٹ بیٹل رویال تجربہ
                     </p>
                 </div>
                 <div class="footer-links">
-                    <a href="#game" class="footer-link text-gray-300 hover:text-white">Play Deadshot</a>
-                    <a href="#about" class="footer-link text-gray-300 hover:text-white">About</a>
-                    <a href="#features" class="footer-link text-gray-300 hover:text-white">Features</a>
-                    <a href="#tips" class="footer-link text-gray-300 hover:text-white">Tips</a>
-                    <a href="terms-of-service.html" class="footer-link text-gray-300 hover:text-white">Terms of Service</a>
-                    <a href="privacy-policy.html" class="footer-link text-gray-300 hover:text-white">Privacy Policy</a>
+                    <a href="#game" class="footer-link text-gray-300 hover:text-white">ڈیڈشاٹ کھیلیں</a>
+                    <a href="#about" class="footer-link text-gray-300 hover:text-white">متعلق</a>
+                    <a href="#features" class="footer-link text-gray-300 hover:text-white">خصوصیات</a>
+                    <a href="#tips" class="footer-link text-gray-300 hover:text-white">ٹپس</a>
+                    <a href="../terms-of-service.html" class="footer-link text-gray-300 hover:text-white">سروس کی شرائط</a>
+                    <a href="../privacy-policy.html" class="footer-link text-gray-300 hover:text-white">رازداری کی پالیسی</a>
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2025 Deadshot.top - All Rights Reserved
+                &copy; 2025 Deadshot.top - جملہ حقوق محفوظ ہیں
             </div>
         </div>
     </footer>
@@ -702,6 +706,31 @@
                 document.addEventListener('click', function(e) {
                     if (!e.target.closest('.language-selector')) {
                         langMenu.classList.add('hidden');
+                    }
+                });
+            }
+            
+            // Mobile menu functionality
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                // Close mobile menu when clicking menu items
+                const mobileMenuItems = mobileMenu.querySelectorAll('a');
+                mobileMenuItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+                
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!e.target.closest('.mobile-menu') && !e.target.closest('.mobile-menu-button')) {
+                        mobileMenu.classList.add('hidden');
                     }
                 });
             }
