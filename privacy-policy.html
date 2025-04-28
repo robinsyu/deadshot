@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Deadshot</title>
+    <meta name="description" content="Deadshot privacy policy - Learn how we protect your data while you play our battle royale shooter game.">
+    <link rel="canonical" href="https://deadshot.top/privacy-policy.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Nom style - Dark theme with gaming aesthetics */
+        :root {
+            --primary: #6d28d9;
+            --primary-hover: #5b21b6;
+            --secondary: #4c1d95;
+            --background: #0f172a;
+            --background-lighter: #1e293b;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #f97316;
+            --accent-hover: #ea580c;
+            --card-bg: rgba(30, 41, 59, 0.5);
+            --glow: 0 0 15px rgba(109, 40, 217, 0.5);
+            
+            /* Spacing variables */
+            --space-xs: 0.5rem;
+            --space-sm: 0.875rem;
+            --space-md: 1.25rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+            
+            /* Section spacing */
+            --section-spacing: 5rem;
+            --item-spacing: 1.5rem;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            font-family: 'Inter', system-ui, sans-serif;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(109, 40, 217, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 50%, rgba(249, 115, 22, 0.03) 0%, transparent 25%),
+                radial-gradient(circle at 50% 80%, rgba(109, 40, 217, 0.05) 0%, transparent 20%);
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+        
+        h1, h2, .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 0.025em;
+        }
+        
+        h3, .btn-primary, nav a {
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.025em;
+        }
+        
+        .accent-text {
+            color: var(--accent);
+            text-shadow: 0 0 10px rgba(249, 115, 22, 0.3);
+        }
+        
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            padding-bottom: 3px;
+            font-size: 1.05rem;
+            margin: 0 var(--space-sm);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--accent);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-xl);
+            padding-left: var(--space-md);
+            font-size: 1.875rem;
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            width: 150px;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        header {
+            background-color: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: var(--space-md) var(--space-lg);
+        }
+        
+        @media (min-width: 768px) {
+            header {
+                padding: var(--space-md) var(--space-xl);
+            }
+        }
+        
+        main {
+            padding: var(--space-xl) var(--space-lg);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            main {
+                padding: var(--space-2xl) var(--space-xl);
+            }
+        }
+        
+        section {
+            margin-bottom: var(--section-spacing);
+        }
+        
+        .policy-section {
+            margin-bottom: var(--space-xl);
+        }
+        
+        .policy-section h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: var(--space-md);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+        }
+        
+        .policy-section p {
+            margin-bottom: var(--space-md);
+        }
+        
+        .policy-section ul {
+            list-style-type: disc;
+            margin-left: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+        
+        .policy-section ul li {
+            margin-bottom: var(--space-xs);
+        }
+        
+        footer {
+            background-color: var(--background-lighter);
+            padding: var(--space-xl) var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+        
+        @media (min-width: 768px) {
+            footer {
+                padding: var(--space-xl) var(--space-xl);
+            }
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-navigation {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: var(--space-lg);
+        }
+        
+        @media (min-width: 768px) {
+            .footer-links {
+                flex-direction: row;
+                margin-top: 0;
+            }
+        }
+        
+        .footer-link {
+            position: relative;
+            transition: all 0.3s ease;
+            margin: var(--space-xs) 0;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-link {
+                margin: 0 var(--space-md);
+            }
+        }
+        
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: var(--accent);
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: white;
+        }
+        
+        .footer-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-copyright {
+            text-align: center;
+            margin-top: var(--space-xl);
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .btn-back {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-lg);
+            background-color: var(--background-lighter);
+            color: var(--text);
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .btn-back:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header>
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-white logo-text">
+                    <span class="accent-text">DEAD</span>SHOT
+                </a>
+            </div>
+            <nav class="hidden md:flex">
+                <a href="index.html#game" class="nav-link text-gray-300 hover:text-white">Play Deadshot</a>
+                <a href="index.html#about" class="nav-link text-gray-300 hover:text-white">About</a>
+                <a href="index.html#features" class="nav-link text-gray-300 hover:text-white">Features</a>
+                <a href="index.html#tips" class="nav-link text-gray-300 hover:text-white">Tips</a>
+            </nav>
+            <div class="block md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <a href="index.html" class="btn-back">
+            &larr; Back to Home
+        </a>
+        
+        <h1 class="page-title">
+            <span class="accent-text">Privacy</span> Policy
+        </h1>
+        
+        <div class="policy-section">
+            <h2>Introduction</h2>
+            <p>
+                Welcome to the Deadshot Privacy Policy. At Deadshot, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at deadshot.top and play our game.
+            </p>
+            <p>
+                Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the site or play our game.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Information We Collect</h2>
+            <p>
+                We may collect several types of information from and about users of our game and website, including:
+            </p>
+            <ul>
+                <li>Personal identifiers such as your name, email address, username, or similar identifiers when you register to play Deadshot.</li>
+                <li>Technical data including IP address, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform, and other technology on the devices you use to access this website.</li>
+                <li>Gameplay data including scores, achievements, and in-game performance statistics.</li>
+                <li>User-generated content that you provide in your communications with us or other users.</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>How We Collect Your Information</h2>
+            <p>
+                We collect information through:
+            </p>
+            <ul>
+                <li>Direct interactions when you provide us with your details by filling in forms or corresponding with us.</li>
+                <li>Automated technologies or interactions as you navigate through our site. We may automatically collect technical data about your equipment, browsing actions, and patterns.</li>
+                <li>Third parties such as analytics providers and advertising partners.</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>How We Use Your Information</h2>
+            <p>
+                We may use the information we collect about you for various purposes, including to:
+            </p>
+            <ul>
+                <li>Create and manage your account.</li>
+                <li>Provide and maintain our service, including to monitor the usage of our service.</li>
+                <li>Improve our website and gaming experience.</li>
+                <li>Communicate with you, including sending you updates, security alerts, and support messages.</li>
+                <li>Administer and protect our business and website.</li>
+                <li>Deliver relevant website content and advertisements to you.</li>
+                <li>Measure or understand the effectiveness of the advertising we serve to you.</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Disclosure of Your Information</h2>
+            <p>
+                We may disclose your personal information in the following situations:
+            </p>
+            <ul>
+                <li>To our service providers and business partners to perform services on our behalf.</li>
+                <li>To comply with any court order, law, or legal process, including to respond to any government or regulatory request.</li>
+                <li>To enforce our Terms of Service and other agreements.</li>
+                <li>If we believe disclosure is necessary to protect the rights, property, or safety of Deadshot, our users, or others.</li>
+                <li>In connection with a business transaction such as a merger, acquisition, or asset sale.</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Data Security</h2>
+            <p>
+                We have implemented appropriate security measures to prevent your personal data from being accidentally lost, used, accessed, altered, or disclosed in an unauthorized way. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Your Rights</h2>
+            <p>
+                Depending on your location, you may have certain rights regarding your personal information, such as:
+            </p>
+            <ul>
+                <li>The right to access, update, or delete the information we have on you.</li>
+                <li>The right of rectification to have your information corrected if it is inaccurate or incomplete.</li>
+                <li>The right to object to our processing of your personal data.</li>
+                <li>The right of restriction to request that we restrict the processing of your personal information.</li>
+                <li>The right to data portability to receive a copy of the data we have on you in a structured, machine-readable format.</li>
+                <li>The right to withdraw consent at any time where we relied on your consent to process your personal information.</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Children's Privacy</h2>
+            <p>
+                Our service is not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the bottom of this page. You are advised to review this Privacy Policy periodically for any changes.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions about this Privacy Policy, please contact us at:
+            </p>
+            <p>
+                Email: privacy@deadshot.top
+            </p>
+        </div>
+        
+        <p class="text-center text-gray-400 mt-10">
+            Last Updated: June 15, 2024
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-navigation">
+                <div>
+                    <div class="text-2xl font-bold text-white logo-text mb-3">
+                        <span class="accent-text">DEAD</span>SHOT
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        The ultimate Deadshot battle royale experience
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link text-gray-300 hover:text-white">Home</a>
+                    <a href="index.html#game" class="footer-link text-gray-300 hover:text-white">Play Deadshot</a>
+                    <a href="terms-of-service.html" class="footer-link text-gray-300 hover:text-white">Terms of Service</a>
+                    <a href="privacy-policy.html" class="footer-link text-gray-300 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 Deadshot.top - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

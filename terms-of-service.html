@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Deadshot</title>
+    <meta name="description" content="Deadshot terms of service - Learn about the rules and guidelines for playing our battle royale shooter game.">
+    <link rel="canonical" href="https://deadshot.top/terms-of-service.html">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Nom style - Dark theme with gaming aesthetics */
+        :root {
+            --primary: #6d28d9;
+            --primary-hover: #5b21b6;
+            --secondary: #4c1d95;
+            --background: #0f172a;
+            --background-lighter: #1e293b;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #f97316;
+            --accent-hover: #ea580c;
+            --card-bg: rgba(30, 41, 59, 0.5);
+            --glow: 0 0 15px rgba(109, 40, 217, 0.5);
+            
+            /* Spacing variables */
+            --space-xs: 0.5rem;
+            --space-sm: 0.875rem;
+            --space-md: 1.25rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+            
+            /* Section spacing */
+            --section-spacing: 5rem;
+            --item-spacing: 1.5rem;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            font-family: 'Inter', system-ui, sans-serif;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(109, 40, 217, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 50%, rgba(249, 115, 22, 0.03) 0%, transparent 25%),
+                radial-gradient(circle at 50% 80%, rgba(109, 40, 217, 0.05) 0%, transparent 20%);
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+        
+        h1, h2, .logo-text {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 0.025em;
+        }
+        
+        h3, .btn-primary, nav a {
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.025em;
+        }
+        
+        .accent-text {
+            color: var(--accent);
+            text-shadow: 0 0 10px rgba(249, 115, 22, 0.3);
+        }
+        
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            padding-bottom: 3px;
+            font-size: 1.05rem;
+            margin: 0 var(--space-sm);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--accent);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-xl);
+            padding-left: var(--space-md);
+            font-size: 1.875rem;
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            width: 150px;
+            bottom: -10px;
+            left: 0;
+        }
+        
+        header {
+            background-color: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: var(--space-md) var(--space-lg);
+        }
+        
+        @media (min-width: 768px) {
+            header {
+                padding: var(--space-md) var(--space-xl);
+            }
+        }
+        
+        main {
+            padding: var(--space-xl) var(--space-lg);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 768px) {
+            main {
+                padding: var(--space-2xl) var(--space-xl);
+            }
+        }
+        
+        section {
+            margin-bottom: var(--section-spacing);
+        }
+        
+        .policy-section {
+            margin-bottom: var(--space-xl);
+        }
+        
+        .policy-section h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: var(--space-md);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+        }
+        
+        .policy-section p {
+            margin-bottom: var(--space-md);
+        }
+        
+        .policy-section ul {
+            list-style-type: disc;
+            margin-left: var(--space-xl);
+            margin-bottom: var(--space-md);
+        }
+        
+        .policy-section ul li {
+            margin-bottom: var(--space-xs);
+        }
+        
+        footer {
+            background-color: var(--background-lighter);
+            padding: var(--space-xl) var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+        
+        @media (min-width: 768px) {
+            footer {
+                padding: var(--space-xl) var(--space-xl);
+            }
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-navigation {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: var(--space-lg);
+        }
+        
+        @media (min-width: 768px) {
+            .footer-links {
+                flex-direction: row;
+                margin-top: 0;
+            }
+        }
+        
+        .footer-link {
+            position: relative;
+            transition: all 0.3s ease;
+            margin: var(--space-xs) 0;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-link {
+                margin: 0 var(--space-md);
+            }
+        }
+        
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background-color: var(--accent);
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: white;
+        }
+        
+        .footer-link:hover::after {
+            width: 100%;
+        }
+        
+        .footer-copyright {
+            text-align: center;
+            margin-top: var(--space-xl);
+            padding-top: var(--space-lg);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .btn-back {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-lg);
+            background-color: var(--background-lighter);
+            color: var(--text);
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .btn-back:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header>
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-white logo-text">
+                    <span class="accent-text">DEAD</span>SHOT
+                </a>
+            </div>
+            <nav class="hidden md:flex">
+                <a href="index.html#game" class="nav-link text-gray-300 hover:text-white">Play Deadshot</a>
+                <a href="index.html#about" class="nav-link text-gray-300 hover:text-white">About</a>
+                <a href="index.html#features" class="nav-link text-gray-300 hover:text-white">Features</a>
+                <a href="index.html#tips" class="nav-link text-gray-300 hover:text-white">Tips</a>
+            </nav>
+            <div class="block md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <a href="index.html" class="btn-back">
+            &larr; Back to Home
+        </a>
+        
+        <h1 class="page-title">
+            <span class="accent-text">Terms</span> of Service
+        </h1>
+        
+        <div class="policy-section">
+            <h2>Agreement to Terms</h2>
+            <p>
+                Welcome to Deadshot. By accessing our website at deadshot.top, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+            </p>
+            <p>
+                These Terms of Service constitute a legally binding agreement made between you and Deadshot, concerning your access to and use of the website and game.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Intellectual Property Rights</h2>
+            <p>
+                The Deadshot website and its original content, features, and functionality are owned by Deadshot and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
+            </p>
+            <p>
+                Without explicit permission, you may not:
+            </p>
+            <ul>
+                <li>Modify or copy the materials on this website</li>
+                <li>Use the materials for any commercial purpose or for any public display</li>
+                <li>Attempt to reverse engineer any software contained on the Deadshot website</li>
+                <li>Remove any copyright or other proprietary notations from the materials</li>
+                <li>Transfer the materials to another person or mirror the materials on any other server</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>User Accounts</h2>
+            <p>
+                When you create an account with us, you guarantee that:
+            </p>
+            <ul>
+                <li>You are above the age of 13</li>
+                <li>The information you provide us is accurate, complete, and current at all times</li>
+                <li>You are solely responsible for maintaining the confidentiality of your account and password</li>
+                <li>You accept responsibility for all activities that occur under your account</li>
+            </ul>
+            <p>
+                We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders at our sole discretion.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>User Conduct</h2>
+            <p>
+                While using our service, you agree not to:
+            </p>
+            <ul>
+                <li>Use the service in any way that violates any applicable national or international law or regulation</li>
+                <li>Engage in any conduct that restricts or inhibits anyone's use or enjoyment of the service</li>
+                <li>Use any robot, spider, or other automatic device, process, or means to access the service for any purpose</li>
+                <li>Introduce any viruses, Trojan horses, worms, logic bombs, or other material that is malicious or technologically harmful</li>
+                <li>Attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the service</li>
+                <li>Use the service to send, knowingly receive, upload, download, use, or re-use any material which violates these Terms of Service</li>
+                <li>Harass, bully, intimidate, or threaten any other users</li>
+                <li>Impersonate or attempt to impersonate Deadshot, a Deadshot employee, another user, or any other person or entity</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Game Rules and Fair Play</h2>
+            <p>
+                When playing Deadshot, you agree to:
+            </p>
+            <ul>
+                <li>Play fairly and not use any unauthorized third-party software, cheats, hacks, bots, or other unauthorized methods that provide an unfair advantage</li>
+                <li>Not exploit any bugs, glitches, or design flaws in the game</li>
+                <li>Not engage in any activity that disrupts or interferes with the normal gameplay experience for others</li>
+                <li>Not use offensive names, language, or content in your gameplay</li>
+                <li>Report any bugs or issues to us rather than exploiting them</li>
+            </ul>
+            <p>
+                Violation of these rules may result in temporary or permanent suspension from the game, at our sole discretion.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Limited License</h2>
+            <p>
+                We grant you a limited, non-exclusive, non-transferable, and revocable license to access and use our service for personal, non-commercial purposes. This license is subject to these Terms of Service.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Disclaimer of Warranties</h2>
+            <p>
+                The service is provided on an "AS IS" and "AS AVAILABLE" basis. Deadshot makes no warranties, expressed or implied, regarding the operation or availability of the service.
+            </p>
+            <p>
+                We do not warrant that:
+            </p>
+            <ul>
+                <li>The service will meet your specific requirements</li>
+                <li>The service will be uninterrupted, timely, secure, or error-free</li>
+                <li>The results that may be obtained from the use of the service will be accurate or reliable</li>
+                <li>Any errors in the service will be corrected</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Limitation of Liability</h2>
+            <p>
+                In no event shall Deadshot, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+            </p>
+            <ul>
+                <li>Your access to or use of or inability to access or use the service</li>
+                <li>Any conduct or content of any third party on the service</li>
+                <li>Any content obtained from the service</li>
+                <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Third-Party Links</h2>
+            <p>
+                Our service may contain links to third-party websites or services that are not owned or controlled by Deadshot. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services.
+            </p>
+            <p>
+                You acknowledge and agree that Deadshot shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Termination</h2>
+            <p>
+                We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
+            </p>
+            <p>
+                If you wish to terminate your account, you may simply discontinue using the service or contact us to request account deletion.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Governing Law</h2>
+            <p>
+                These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which Deadshot operates, without regard to its conflict of law provisions.
+            </p>
+            <p>
+                Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Changes to Terms of Service</h2>
+            <p>
+                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice of any changes by posting the new Terms on this page and updating the "Last Updated" date.
+            </p>
+            <p>
+                By continuing to access or use our service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the service.
+            </p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions about these Terms of Service, please contact us at:
+            </p>
+            <p>
+                Email: terms@deadshot.top
+            </p>
+        </div>
+        
+        <p class="text-center text-gray-400 mt-10">
+            Last Updated: June 15, 2024
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-navigation">
+                <div>
+                    <div class="text-2xl font-bold text-white logo-text mb-3">
+                        <span class="accent-text">DEAD</span>SHOT
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        The ultimate Deadshot battle royale experience
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link text-gray-300 hover:text-white">Home</a>
+                    <a href="index.html#game" class="footer-link text-gray-300 hover:text-white">Play Deadshot</a>
+                    <a href="terms-of-service.html" class="footer-link text-gray-300 hover:text-white">Terms of Service</a>
+                    <a href="privacy-policy.html" class="footer-link text-gray-300 hover:text-white">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 Deadshot.top - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
